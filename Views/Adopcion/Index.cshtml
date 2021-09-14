@@ -1,0 +1,40 @@
+@model ventasform.Models.Adopcion
+    ViewData["Title"] = "Registro de Adopcion";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+    <h1 class="display-4">Formulario de Registro de Adopcion</h1>
+
+<form asp-controller="RegistroAdopcion" asp-action="Create">
+        <label asp-for="Nombre" class="control-label"></label>
+        <input asp-for="Nombre" class="form-control" type="text"/>
+
+        <label asp-for="Apellido Paterno" class="control-label"></label>
+        <input asp-for="Apellido Paterno" class="form-control" type="text"/>
+
+        <label asp-for="Apellido Materno" class="control-label"></label>
+        <input asp-for="Apellido Materno" class="form-control" type="text"/>
+
+        <label asp-for="Descripcion del espacio para la mascota" class="control-label"></label>
+        <input asp-for="Descripcion del espacio para la mascota" class="form-control form-control-sm" type="text" placeholder="Precio del producto" aria-label=".form-control-sm"/>
+
+        <label asp-for="Telefono" class="control-label"></label>
+        <input asp-for="Telefono" class="form-control form-control-sm" type="text" placeholder="Cantidad del producto" aria-label=".form-control-sm"/>
+
+        <label asp-for="Dirección" class="control-label"></label>
+        <input asp-for="Dirección" class="form-control form-control-sm" type="text" placeholder="Cantidad del producto" aria-label=".form-control-sm"/>
+
+<div class="form-group">
+
+     <button type="submit" class="btn btn-primary">Registrar</button>
+</form>
+<h1>@ViewData["Message"]</h1>
+</div>
+
+ </div> 
+
+
+ <p>Miriam Arleth Ochoa Machaca</p>
+</div>
